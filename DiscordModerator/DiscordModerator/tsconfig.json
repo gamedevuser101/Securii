@@ -1,25 +1,29 @@
 {
   "compilerOptions": {
-    "target": "ESNext", 
-    "module": "ESNext", 
-    "moduleResolution": "Node",
-    "strict": true, 
-    "jsx": "react", 
-    "allowJs": true, 
-    "esModuleInterop": true, 
-    "skipLibCheck": true, 
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "noEmit": true, 
-    "allowImportingTsExtensions": true, 
-    "isolatedModules": true,
-    "outDir": "./dist" 
+    "target": "ES6",  // You can set it to "ESNext" for modern JavaScript features
+    "module": "ESNext",  // Use ES modules
+    "moduleResolution": "Node",  // Resolves modules as Node.js does
+    "strict": true,  // Enables all strict type-checking options
+    "skipLibCheck": true,  // Skip library checking to speed up compilation
+    "esModuleInterop": true,  // Allows default imports
+    "forceConsistentCasingInFileNames": true,  // Ensure file names are consistent
+    "resolveJsonModule": true,  // Resolve JSON modules
+    "baseUrl": ".",  // Base URL for non-relative imports
+    "paths": {
+      "@/*": ["src/*"]  // Use aliases for simpler imports
+    },
+    "outDir": "./dist",  // Output directory for compiled files
+    "rootDir": "./src",  // Root directory for source code
+    "allowJs": true,  // Allow JavaScript files in the project
+    "lib": ["DOM", "ESNext"],  // Include necessary libraries for frontend development
+    "sourceMap": true  // Generate source maps
   },
   "include": [
-    "client/src/**/*",
-    "server/**/*"
+    "src/**/*.ts",  // Include all TypeScript files
+    "src/**/*.tsx"  // Include all TSX files (React components)
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",  // Exclude node_modules folder
+    "dist"  // Exclude output directory
   ]
 }
