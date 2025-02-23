@@ -10,9 +10,10 @@
     "skipLibCheck": true, 
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "noEmit": true,
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true
+    "noEmit": true, 
+    "allowImportingTsExtensions": true, 
+    "isolatedModules": true,
+    "outDir": "./dist" 
   },
   "include": [
     "client/src/**/*",
