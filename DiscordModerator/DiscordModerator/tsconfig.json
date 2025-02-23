@@ -1,24 +1,25 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist",
-    "baseUrl": ".",
+    "target": "es6",                         // Specifies the target JavaScript version
+    "module": "esnext",                      // Use ES modules
+    "moduleResolution": "node",              // Resolve modules like Node.js does
+    "strict": true,                          // Enable strict type-checking options
+    "esModuleInterop": true,                 // Enable interop between CommonJS and ES Modules
+    "skipLibCheck": true,                    // Skip checking declaration files for library dependencies
+    "forceConsistentCasingInFileNames": true,// Ensure consistent file name casing
+    "outDir": "./dist",                      // Output directory for compiled files
+    "baseUrl": ".",                          // Base directory for resolving non-relative modules
     "paths": {
-      "*": ["node_modules/*"]
-    }
+      "*": ["node_modules/*"]                // Module resolution for dependencies
+    },
+    "jsx": "react"                           // Allow JSX syntax for React
   },
   "include": [
-    "client/src/main.tsx",
-    "client/src/app.tsx"
+    "client/src/**/*.ts",                    // Include all .ts files in src folder
+    "client/src/**/*.tsx"                    // Include all .tsx files in src folder
   ],
   "exclude": [
-    "node_modules",
-    "dist"
+    "node_modules",                          // Exclude node_modules from compilation
+    "dist"                                   // Exclude dist folder (compiled output)
   ]
 }
