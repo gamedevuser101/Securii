@@ -4,11 +4,10 @@
   "compilerOptions": {
     "incremental": true,
     "tsBuildInfoFile": "./node_modules/typescript/tsbuildinfo",
-    "noEmit": true,
-    "module": "ESNext",
+    "noEmit": false,  // Enable emitting .js files
+    "module": "CommonJS",  // Use CommonJS for Node.js compatibility
     "strict": true,
     "lib": ["esnext", "dom", "dom.iterable"],
-    "jsx": "preserve",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "allowImportingTsExtensions": true,
@@ -18,6 +17,8 @@
     "paths": {
       "@/*": ["./client/src/*"],
       "@shared/*": ["./shared/*"]
-    }
+    },
+    "outDir": "./dist",  // Directory to output the compiled .js files
+    "rootDir": "./server"  // Assuming your TypeScript files are in the server directory
   }
 }
