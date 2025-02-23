@@ -1,0 +1,64 @@
+
+> rest-express@1.0.0 dev
+> tsx server/index.ts
+
+Registered 23 commands
+Bot logged in successfully
+Registering 23 slash commands
+Logged in as Securi#6547
+Loaded 23 commands
+Available commands: ban, kick, warn, mute, unmute, softban, clearwarns, warnings, modlogs, purge, lock, unlock, slowmode, balance, daily, giverole, removerole, roleinfo, setmodrole, listmodroles, botinfo, vote, modpanel
+Successfully registered slash commands
+4:47:24 PM [express] serving on port 5000
+Attempting to execute slash command: setmodrole
+Error executing slash command: error: column "level_system" does not exist
+    at /home/runner/workspace/node_modules/pg-pool/index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async <anonymous> (/home/runner/workspace/node_modules/src/node-postgres/session.ts:104:19)
+    at async PostgresStorage.getServerSettings (/home/runner/workspace/server/storage.ts:241:22)
+    at async Client.<anonymous> (/home/runner/workspace/server/bot/events/index.ts:91:24) {
+  length: 113,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '104',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+(node:797) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Attempting to execute slash command: setmodrole
+Error executing slash command: error: column "level_system" does not exist
+    at /home/runner/workspace/node_modules/pg-pool/index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async <anonymous> (/home/runner/workspace/node_modules/src/node-postgres/session.ts:104:19)
+    at async PostgresStorage.getServerSettings (/home/runner/workspace/server/storage.ts:241:22)
+    at async Client.<anonymous> (/home/runner/workspace/server/bot/events/index.ts:91:24) {
+  length: 113,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '104',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}

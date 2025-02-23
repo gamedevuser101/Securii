@@ -1,0 +1,68 @@
+📜 List of 50 Moderation Commands
+1️⃣ Basic Moderation
+!ban @user [reason] – Bans a user from the server.
+!unban @user – Unbans a previously banned user.
+!kick @user [reason] – Kicks a user from the server.
+!mute @user [time] – Temporarily mutes a user.
+!unmute @user – Unmutes a user.
+!warn @user [reason] – Issues a warning to a user.
+!warnings @user – Displays a user’s warnings.
+!clearwarns @user – Clears a user’s warnings.
+!softban @user [reason] – Bans then unbans a user (clears messages).
+!lock #channel – Locks a channel for non-mods.
+!unlock #channel – Unlocks a locked channel.
+!slowmode [time] – Enables slowmode in a channel.
+!noslowmode – Disables slowmode.
+2️⃣ Chat & Spam Control
+!purge [number] – Deletes the last X messages.
+!nuke #channel – Clears all messages in a channel.
+!filter add [word] – Adds a word to the banned words list.
+!filter remove [word] – Removes a word from the filter.
+!filter list – Shows all filtered words.
+!antispam on/off – Toggles anti-spam protection.
+!antiraid on/off – Enables/disables raid protection.
+!capslock on/off – Blocks excessive caps usage.
+!autodelete [word] – Automatically deletes messages containing a specific word.
+!autoreact @user – Reacts to a user's messages automatically.
+!ghostping detect – Detects and logs ghost pings.
+3️⃣ Role & Permission Management
+!giverole @user @role – Gives a user a role.
+!removerole @user @role – Removes a role from a user.
+!createrole [name] [color] – Creates a role with a color.
+!deleterole @role – Deletes a role.
+!listroles – Shows all roles in the server.
+!autorole on/off @role – Automatically gives a role on join.
+!setmodrole @role – Sets the moderator role.
+4️⃣ User & Server Information
+!userinfo @user – Displays info about a user.
+!serverinfo – Shows server statistics.
+!modlogs @user – Shows moderation history of a user.
+!whois @user – Gets information about a user.
+!avatar @user – Displays a user’s avatar.
+5️⃣ Fun & Customization
+!say [message] – Makes the bot say something.
+!poll [question] [options] – Creates a poll.
+!embed [message] – Sends an embedded message.
+!suggest [suggestion] – Adds a suggestion to a suggestion channel.
+!reactionrole [emoji] @role – Adds reaction role functionality.
+6️⃣ Admin & Logs
+!setlog #channel – Sets up a moderation log channel.
+!disablelog – Disables logging.
+!backup create – Creates a backup of server settings.
+!backup load – Loads a saved server backup.
+!shutdown – Turns off the bot.
+!restart – Restarts the bot.
+!botstats – Shows bot uptime and status.
+!ping – Shows bot latency.
+!help – Displays all available commands.
+🛠 Mod Panel (Dashboard)
+A moderation dashboard allows you to manage your bot without commands. You can build a web-based panel using Express.js + EJS or use frameworks like Next.js or React.js.
+
+Features to Include in the Mod Panel
+✅ Dashboard Overview – See total users, bans, warnings, and logs.
+✅ User Management – Ban/unban, mute/unmute, kick users.
+✅ Role Management – Assign and remove roles with a click.
+✅ Server Settings – Enable/disable features like filters & logging.
+✅ Chat Logs – View deleted messages, warnings, and bans.
+✅ Live Moderation – See live server events (join, leave, bans).
+
