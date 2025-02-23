@@ -14,8 +14,8 @@
     }
   },
   "include": [
-    "discordmoderator/client/src/**/*.ts",
-    "discordmoderator/client/src/**/*.tsx"
+    "client/src/main.tsx",
+    "client/src/app.tsx"
   ],
   "exclude": [
     "node_modules",
